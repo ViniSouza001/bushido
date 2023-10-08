@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Bushido</title>
+      <link rel="stylesheet" href="style.css">
+   </head>
+
+   <body>
+      <header>
+         <img src="./assets/logo.png" alt="bushido_img">
+         <h1>Bushido</h1>
+         <img src="./assets/logo.png" alt="bushido_img">
+      </header>
+      <!-- <main class="home body-container">
+         <h1 class="titulo">O que é Bushido?</h1>
+         <div class="container">
+            <p>O Bushido é um código de conduta e ética seguido pelos guerreiros samurais no
+               Japão feudal. Ele é muitas vezes referido como "O Caminho do Guerreiro" e influenciou
+               profundamente a cultura japonesa e o modo de vida dos samurais.
+            </p>
+            <img src="./assets/image-home.png" alt="Foto de samurai">
+         </div>
+         <img onclick="changeNextPage()" class="seta-baixo" src="./assets/seta.png" alt="Seta">
+      </main> -->
+      <div class="content">
+         <aside class="divs-esquerdas">
+            <div onclick="abrirModal(this)" class="topicosEsquerdos">
+               <p id="paragrafoFilho">1. Coragem</p>
+               <div class="divs-modal">
+                  <h1 class="titulo-modal">1. Coragem</h1>
+                  <div class="content-modal">
+                     <img src="./assets/image-card1.png" alt="Samurai" class="img-cards">
+                     <p class="paragrafos-cards">
+                        Os samurais eram ensinados a agir com bravura e a enfrentar o perigo sem medo.
+                        A coragem era uma qualidade fundamental.
+                     </p>
+                  </div>
+                  <div class="fecharModal">
+                     <h3 class="X">X</h3>
+                  </div>
+               </div>
+            </div>
+            <div onclick="abrirModal(this)" class="topicosEsquerdos">
+               <p id="paragrafoFilho">3. Lealdade</p>
+            </div>
+            <div onclick="abrirModal(this)" class="topicosEsquerdos">
+               <p id="paragrafoFilho">5. Compaixão</p>
+            </div>
+            <div onclick="abrirModal(this)" class="topicosEsquerdos">
+               <p id="paragrafoFilho">7. Simplicidade</p>
+            </div>
+            <div onclick="abrirModal(this)" class="topicosEsquerdos">
+               <p id="paragrafoFilho">9. Justiça</p>
+            </div>
+         </aside>
+
+         <main class="main-content body-container">
+            <h1 class="titulo">Os princípios-chaves do Bushido</h1>
+            <img id="bushido-img" src="./assets/img-bushido.png" alt="Image of a samurai">
+            <h1 class="align-center">Clique nas categorias para ver detalhadamente</h1>
+         </main>
+         <aside class="divs-direitas">
+            <div onclick="abrirModal(this)" class="topicosDireitos">
+               <p id="paragrafoFilho">2. Honestidade</p>
+            </div>
+            <div onclick="abrirModal(this)" class="topicosDireitos">
+               <p id="paragrafoFilho">4. Respeito</p>
+            </div>
+            <div onclick="abrirModal(this)" class="topicosDireitos">
+               <p id="paragrafoFilho">6. Honor</p>
+            </div>
+            <div onclick="abrirModal(this)" class="topicosDireitos">
+               <p>8. Autocontrole</p>
+            </div>
+         </aside>
+      </div>
+   </body>
+   <script src="./script.js"></script>
+
+</html>
