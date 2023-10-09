@@ -91,12 +91,21 @@ header h1 {
    align-self: center;
 }
 
+#img-autocontrole {
+   width: 35%;
+}
+
+#div-autocontrole {
+   gap: 5rem;
+}
+
 .topicosEsquerdos,
 .topicosDireitos {
    display: flex;
    top: auto;
    flex-direction: column;
    width: 200px;
+   height: auto;
    padding: 10px;
    background-color: #D9D9D9;
    border-radius: 100px;
@@ -121,7 +130,7 @@ header h1 {
 }
 
 .divs-modal {
-   height: 90%;
+   height: 100%;
    flex-direction: column;
    justify-content: space-around;
    display: none;
@@ -131,8 +140,9 @@ header h1 {
    display: flex;
    width: 100%;
    align-items: center;
-   justify-content: center;
-   gap: 2em;
+   flex-direction: row;
+   justify-content: space-between;
+   /* gap: 2em; */
 }
 
 .titulo-modal {
@@ -145,11 +155,11 @@ header h1 {
 }
 
 #img-passaro {
-   width: 30%;
+   width: 25%;
 }
 
 .paragrafos-cards {
-   width: 40%;
+   width: 100%;
    font-size: 20px;
 }
 
@@ -173,19 +183,24 @@ header h1 {
    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+.fadein-paragrafo {
+   animation: fadein 1s forwards;
+   animation-fill-mode: both;
+}
+
+.fadeout-paragrafo {
+   animation: fadeout .5s forwards;
+   animation-fill-mode: both;
+}
+
 .fadein-conteudo {
    display: flex;
    animation: fadein 1s forwards;
    animation-fill-mode: both;
 }
 
-.fadein-paragrafo {
-   animation: fadein 1s forwards;
-   animation-fill-mode: both;
-}
-
 .fadeout-conteudo {
-   animation: fadeout 1s forwards;
+   animation: fadeout .5s forwards;
    animation-fill-mode: both;
 }
 
@@ -196,155 +211,6 @@ header h1 {
 .fechar-modal-esquerdo {
    animation: fechar-modal-esquerdo 1s forwards;
    animation-fill-mode: both;
-}
-
-/* keyframes */
-
-@keyframes fadeout-up {
-   0% {
-      opacity: 1;
-   }
-
-   100% {
-      margin-top: -30px;
-      opacity: 0;
-      display: none;
-   }
-}
-
-@keyframes abrir-modal-esquerdo {
-   0% {
-      margin-left: -10vh;
-      top: 50%;
-      left: 0;
-      position: absolute;
-      transform: translate(0, -50%);
-      width: 200px;
-      border-radius: 1000px;
-      height: auto;
-   }
-
-   40% {
-      top: 50vh;
-      left: 50vw;
-   }
-
-   50% {
-      top: 50vh;
-      left: 50vw;
-      transform: translate(-50%, -50%);
-      position: absolute;
-      width: 100px;
-      height: 100px;
-      border-radius: 100%;
-   }
-
-   100% {
-      top: 50vh;
-      left: 50vw;
-      transform: translate(-40%, -50%);
-      position: absolute;
-      width: 40%;
-      height: 60%;
-      border-radius: 20px;
-      cursor: default;
-   }
-}
-
-@keyframes abrir-modal-direito {
-   0% {
-      margin-right: -10vh;
-      top: 50%;
-      right: 0;
-      position: absolute;
-      transform: translate(0, -50%);
-      width: 200px;
-      border-radius: 1000px;
-      height: auto;
-   }
-
-   40% {
-      top: 50vh;
-      right: 55vw;
-   }
-
-   50% {
-      top: 50vh;
-      right: 55vw;
-      transform: translate(40%, -50%);
-      position: absolute;
-      width: 100px;
-      height: 100px;
-      border-radius: 100%;
-   }
-
-   100% {
-      top: 50vh;
-      right: 50vw;
-      transform: translate(40%, -50%);
-      position: absolute;
-      width: 40%;
-      height: 60%;
-      border-radius: 20px;
-      cursor: default;
-   }
-}
-
-@keyframes fechar-modal-esquerdo {
-   0% {
-      top: 50vh;
-      left: 50vw;
-      transform: translate(-40%, -50%);
-      position: absolute;
-      width: 40%;
-      height: 60%;
-      border-radius: 20px;
-      cursor: default;
-   }
-
-   50% {
-      top: 50vh;
-      left: 50vw;
-      transform: translate(-50%, -50%);
-      position: absolute;
-      width: 100px;
-      height: 100px;
-      border-radius: 100%;
-   }
-
-   100% {
-      margin-left: -10vh;
-      top: 50%;
-      left: 0;
-      transform: translate(0, -50%);
-      width: 200px;
-      border-radius: 1000px;
-      height: auto;
-   }
-}
-
-@keyframes fadeout {
-   0% {
-      opacity: 1;
-      display: flex;
-   }
-
-   100% {
-      opacity: 0;
-      display: none;
-   }
-}
-
-@keyframes fadein {
-   0% {
-      opacity: 0;
-      display: flex;
-   }
-
-   100% {
-      opacity: 1;
-      display: flex;
-   }
 }
 
 /* estilizações globais */

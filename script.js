@@ -9,14 +9,10 @@ if (nextPage === 0) {
    // home.style.display = 'flex'
 }
 
-if (nextPage == 1) {
-
-}
-
-function abrirModalEsquerdo (element) {
+const abrirModalEsquerdo = (element) => {
    element.classList.add('abrir-modal-esquerdo')
    const paragrafoFilho = element.querySelector('.paragrafoFilho')
-   paragrafoFilho.style.animation = 'fadeout .5s forwards'
+   paragrafoFilho.classList.add('fadeout-paragrafo')
    const conteudo = element.querySelector('.divs-modal')
    setTimeout(() => {
       conteudo.classList.add('fadein-conteudo')
@@ -24,21 +20,29 @@ function abrirModalEsquerdo (element) {
 
    const x = conteudo.querySelector('.fecharModal')
    x.addEventListener('click', () => {
-      element.classList.remove("abrir-modal-esquerdo")
-      element.classList.add('fechar-modal-esquerdo')
       conteudo.classList.add('fadeout-conteudo')
       setTimeout(() => {
-         paragrafoFilho.classList.add('fadein')
-      })
+         element.classList.add('fechar-modal-esquerdo')
+      }, 300);
+      setTimeout(() => {
+         paragrafoFilho.classList.remove('fadeout-paragrafo')
+         paragrafoFilho.classList.add('fadein-paragrafo')
+      }, 1000)
+      setTimeout(() => {
+         element.classList.remove("abrir-modal-esquerdo")
+         conteudo.classList.remove('fadein-conteudo')
+         conteudo.classList.remove('fadeout-conteudo')
+         element.classList.remove('fechar-modal-esquerdo')
+      }, 2000)
    })
 }
 
-function fecharModalEsquerdo(element) {
-   console.log(element)
-   element.style.animation = 'fechar-modal-esquerdo 1s forward'
-}
+// function fecharModalEsquerdo (element) {
+//    console.log(element)
+//    element.style.animation = 'fechar-modal-esquerdo 1s forward'
+// }
 
-function abrirModalDireito(element) {
+function abrirModalDireito (element) {
    element.style.animation = 'abrir-modal-direito 1.5s forwards'
    const paragrafoFilho = element.querySelector('.paragrafoFilho')
    paragrafoFilho.style.animation = 'fadeout .5s forwards'

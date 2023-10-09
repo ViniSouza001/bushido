@@ -1,0 +1,148 @@
+/* keyframes */
+
+@keyframes fadeout-up {
+   0% {
+      opacity: 1;
+   }
+
+   100% {
+      margin-top: -30px;
+      opacity: 0;
+      display: none;
+   }
+}
+
+@keyframes abrir-modal-esquerdo {
+   0% {
+      margin-left: -10vh;
+      top: 50%;
+      left: 0;
+      position: absolute;
+      transform: translate(0, -50%);
+      width: 200px;
+      border-radius: 1000px;
+      height: auto;
+   }
+
+   40% {
+      top: 50vh;
+      left: 50vw;
+   }
+
+   50% {
+      top: 50vh;
+      left: 50vw;
+      transform: translate(-50%, -50%);
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      border-radius: 100%;
+   }
+
+   100% {
+      top: 50vh;
+      left: 50vw;
+      transform: translate(-40%, -50%);
+      position: absolute;
+      width: 40%;
+      height: 60%;
+      border-radius: 20px;
+      cursor: default;
+   }
+}
+
+@keyframes abrir-modal-direito {
+   0% {
+      margin-right: -10vh;
+      top: 50%;
+      right: 0;
+      position: absolute;
+      transform: translate(0, -50%);
+      width: 200px;
+      border-radius: 1000px;
+      height: auto;
+   }
+
+   40% {
+      top: 50vh;
+      right: 55vw;
+   }
+
+   50% {
+      top: 50vh;
+      right: 55vw;
+      transform: translate(40%, -50%);
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      border-radius: 100%;
+   }
+
+   100% {
+      top: 50vh;
+      right: 50vw;
+      transform: translate(40%, -50%);
+      position: absolute;
+      width: 40%;
+      height: 60%;
+      border-radius: 20px;
+      cursor: default;
+   }
+}
+
+@keyframes fechar-modal-esquerdo {
+   0% {
+      top: 50vh;
+      left: 50vw;
+      transform: translate(-40%, -50%);
+      position: absolute;
+      width: 40%;
+      height: 60%;
+      border-radius: 20px;
+      cursor: default;
+   }
+
+   50% {
+      top: 50vh;
+      left: 50vw;
+      transform: translate(-50%, -50%);
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      border-radius: 100%;
+   }
+
+   100% {
+      margin-left: -10vh;
+      top: 50%;
+      left: 0;
+      /* transform: translate(0, -50%); */
+      width: 200px;
+      border-radius: 1000px;
+      height: auto;
+   }
+}
+
+@keyframes fadeout {
+   0% {
+      opacity: 1;
+      display: flex;
+   }
+
+   100% {
+      opacity: 0;
+      display: none;
+   }
+}
+
+@keyframes fadein {
+   0% {
+      opacity: 0;
+      display: flex;
+   }
+
+   100% {
+      opacity: 1;
+      display: flex;
+   }
+}
