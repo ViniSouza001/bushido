@@ -27,8 +27,8 @@
       </main> -->
       <div class="content">
          <aside class="divs-esquerdas">
-            <div onclick="abrirModal(this)" class="topicosEsquerdos">
-               <p id="paragrafoFilho">1. Coragem</p>
+            <div onclick="abrirModalEsquerdo(this)" class="topicosEsquerdos">
+               <p class="paragrafoFilho">1. Coragem</p>
                <div class="divs-modal">
                   <h1 class="titulo-modal">1. Coragem</h1>
                   <div class="content-modal">
@@ -39,21 +39,74 @@
                      </p>
                   </div>
                   <div class="fecharModal">
+                     <h3 class="X" onclick="fecharModalEsquerdo()">X</h3>
+                  </div>
+               </div>
+            </div>
+            <div onclick="abrirModalEsquerdo(this)" class="topicosEsquerdos">
+               <p class="paragrafoFilho">3. Lealdade</p>
+               <div class="divs-modal">
+                  <h1 class="titulo-modal">3. Lealdade</h1>
+                  <div class="content-modal">
+                     <img src="./assets/image-card3.png" alt="Samurai" class="img-cards">
+                     <p class="paragrafos-cards">
+                        A lealdade ao seu senhor era considerada uma das virtudes mais importantes. 
+                        Um samurai deveria estar disposto a sacrificar a própria vida em defesa de seu mestre.
+                     </p>
+                  </div>
+                  <div class="fecharModal">
                      <h3 class="X">X</h3>
                   </div>
                </div>
             </div>
-            <div onclick="abrirModal(this)" class="topicosEsquerdos">
-               <p id="paragrafoFilho">3. Lealdade</p>
+            <div onclick="abrirModalEsquerdo(this)" class="topicosEsquerdos">
+               <p class="paragrafoFilho">5. Compaixão</p>
+               <div class="divs-modal">
+                  <h1 class="titulo-modal">5. Compaixão</h1>
+                  <div class="content-modal">
+                     <img src="./assets/image-card5.png" alt="Samurai" class="img-cards">
+                     <p class="paragrafos-cards">
+                        Embora os samurais fossem treinados para serem guerreiros, 
+                        o Bushido também enfatizava a importância da compaixão e da 
+                        empatia para com os menos afortunados.
+                     </p>
+                  </div>
+                  <div class="fecharModal">
+                     <h3 class="X">X</h3>
+                  </div>
+               </div>
             </div>
-            <div onclick="abrirModal(this)" class="topicosEsquerdos">
-               <p id="paragrafoFilho">5. Compaixão</p>
+            <div onclick="abrirModalEsquerdo(this)" class="topicosEsquerdos">
+               <p class="paragrafoFilho">7. Simplicidade</p>
+               <div class="divs-modal">
+                  <h1 class="titulo-modal">7. Simplicidade</h1>
+                  <div class="content-modal">
+                     <img src="./assets/image-card7.png" alt="Samurai" class="img-cards">
+                     <p class="paragrafos-cards">
+                        Os samurais eram encorajados a viver de forma simples e 
+                        desprovida de excessos, evitando o luxo e o desperdício.
+                     </p>
+                  </div>
+                  <div class="fecharModal">
+                     <h3 class="X">X</h3>
+                  </div>
+               </div>
             </div>
-            <div onclick="abrirModal(this)" class="topicosEsquerdos">
-               <p id="paragrafoFilho">7. Simplicidade</p>
-            </div>
-            <div onclick="abrirModal(this)" class="topicosEsquerdos">
-               <p id="paragrafoFilho">9. Justiça</p>
+            <div onclick="abrirModalEsquerdo(this)" class="topicosEsquerdos">
+               <p class="paragrafoFilho">9. Justiça</p>
+               <div class="divs-modal">
+                  <h1 class="titulo-modal">9. Justiça</h1>
+                  <div class="content-modal">
+                     <img src="./assets/image-card9.png" alt="Samurai" id="img-passaro">
+                     <p class="paragrafos-cards">
+                        A justiça no Bushido se refere à busca e à prática da justiça 
+                        e da retidão moral em todas as ações e decisões de um samurai.
+                     </p>
+                  </div>
+                  <div class="fecharModal">
+                     <h3 class="X">X</h3>
+                  </div>
+               </div>
             </div>
          </aside>
 
@@ -63,17 +116,70 @@
             <h1 class="align-center">Clique nas categorias para ver detalhadamente</h1>
          </main>
          <aside class="divs-direitas">
-            <div onclick="abrirModal(this)" class="topicosDireitos">
-               <p id="paragrafoFilho">2. Honestidade</p>
+            <div onclick="abrirModalDireito(this)" class="topicosDireitos">
+               <p class="paragrafoFilho">2. Honestidade</p>
+               <div class="divs-modal">
+                  <h1 class="titulo-modal">2. Honestidade</h1>
+                  <div class="content-modal">
+                     <img src="./assets/image-card2.png" alt="Samurai" id="img-passaro">
+                     <p class="paragrafos-cards">
+                        A honestidade e a retidão eram altamente valorizadas. Os samurais 
+                        eram esperados para manter a sua palavra e agir de forma justa.
+                     </p>
+                  </div>
+                  <div class="fecharModal">
+                     <h3 class="X">X</h3>
+                  </div>
+               </div>
             </div>
-            <div onclick="abrirModal(this)" class="topicosDireitos">
-               <p id="paragrafoFilho">4. Respeito</p>
+            <div onclick="abrirModalDireito(this)" class="topicosDireitos">
+               <p class="paragrafoFilho">4. Respeito</p>
+               <div class="divs-modal">
+                  <h1 class="titulo-modal">4. Respeito</h1>
+                  <div class="content-modal">
+                     <img src="./assets/image-card4.png" alt="Samurai" id="img-passaro">
+                     <p class="paragrafos-cards">
+                        Respeitar os outros, especialmente aqueles de posição superior, era 
+                        fundamental no Bushido. Isso incluía o respeito pelos idosos e pelos pais.
+                     </p>
+                  </div>
+                  <div class="fecharModal">
+                     <h3 class="X">X</h3>
+                  </div>
+               </div>
             </div>
-            <div onclick="abrirModal(this)" class="topicosDireitos">
-               <p id="paragrafoFilho">6. Honor</p>
+            <div onclick="abrirModalDireito(this)" class="topicosDireitos">
+               <p class="paragrafoFilho">6. Honor</p>
+               <div class="divs-modal">
+                  <h1 class="titulo-modal">6. Honor</h1>
+                  <div class="content-modal">
+                     <img src="./assets/image-card6.png" alt="Samurai" id="img-passaro">
+                     <p class="paragrafos-cards">
+                        A honra pessoal era uma preocupação constante para os samurais. A perda de 
+                        honra era vista como uma das piores desgraças que alguém poderia enfrentar.
+                     </p>
+                  </div>
+                  <div class="fecharModal">
+                     <h3 class="X">X</h3>
+                  </div>
+               </div>
+
             </div>
-            <div onclick="abrirModal(this)" class="topicosDireitos">
-               <p>8. Autocontrole</p>
+            <div onclick="abrirModalDireito(this)" class="topicosDireitos">
+               <p class="paragrafoFilho">8. Autocontrole</p>
+               <div class="divs-modal">
+                  <h1 class="titulo-modal">8. Autocontrole</h1>
+                  <div class="content-modal">
+                     <img src="./assets/image-card8.png" alt="Samurai" id="img-passaro">
+                     <p class="paragrafos-cards">
+                        O autocontrole, tanto nas emoções quanto nas ações, era 
+                        fundamental para um samurai. A impulsividade era desencorajada.
+                     </p>
+                  </div>
+                  <div class="fecharModal">
+                     <h3 class="X">X</h3>
+                  </div>
+               </div>
             </div>
          </aside>
       </div>
