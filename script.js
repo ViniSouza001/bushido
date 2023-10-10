@@ -10,31 +10,40 @@ if (nextPage === 0) {
 }
 
 const abrirModalEsquerdo = (element) => {
-   element.classList.add('abrir-modal-esquerdo')
-   const paragrafoFilho = element.querySelector('.paragrafoFilho')
-   paragrafoFilho.classList.add('fadeout-paragrafo')
-   const conteudo = element.querySelector('.divs-modal')
-   setTimeout(() => {
-      conteudo.classList.add('fadein-conteudo')
-   }, 1200)
+   if(element.className == 'topicosEsquerdos') {
+      // console.log(element)
+      element.classList.add('abrir-modal-esquerdo')
+      const paragrafoFilho = element.querySelector('.paragrafoFilho')
+      paragrafoFilho.classList.add('fadeout-paragrafo')
+      const conteudo = element.querySelector('.divs-modal')
+      setTimeout(() => {
+         conteudo.classList.add('fadein-conteudo')
+      }, 1200)
 
-   const x = conteudo.querySelector('.fecharModal')
-   x.addEventListener('click', () => {
-      conteudo.classList.add('fadeout-conteudo')
-      setTimeout(() => {
-         element.classList.add('fechar-modal-esquerdo')
-      }, 300);
-      setTimeout(() => {
-         paragrafoFilho.classList.remove('fadeout-paragrafo')
-         paragrafoFilho.classList.add('fadein-paragrafo')
-      }, 1000)
-      setTimeout(() => {
-         element.classList.remove("abrir-modal-esquerdo")
-         conteudo.classList.remove('fadein-conteudo')
-         conteudo.classList.remove('fadeout-conteudo')
-         element.classList.remove('fechar-modal-esquerdo')
-      }, 2000)
-   })
+      const x = conteudo.querySelector('.fecharModalEsquerdo')
+      
+      x.addEventListener('click', () => {
+         conteudo.classList.add('fadeout-conteudo')
+         setTimeout(() => {
+            element.classList.add('fechar-modal-esquerdo')
+         }, 300);
+         setTimeout(() => {
+            paragrafoFilho.classList.remove('fadeout-paragrafo')
+            paragrafoFilho.classList.add('fadein-paragrafo')
+         }, 1000)
+         setTimeout(() => {
+            element.classList.remove("abrir-modal-esquerdo")
+            conteudo.classList.remove('fadein-conteudo')
+            conteudo.classList.remove('fadeout-conteudo')
+            element.classList.remove('fechar-modal-esquerdo')
+         }, 2000)
+      })
+   } else {
+      console.log(element)
+      // element.classList.add('abrir-modal-direito')
+      console.log('direito')
+
+   }
 }
 
 // function fecharModalEsquerdo (element) {
