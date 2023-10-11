@@ -40,11 +40,13 @@ header h1 {
 }
 
 .home {
-   /* animation: fadeout-up 1s; */
    display: none;
 }
 
 .titulo {
+   display: flex;
+   align-items: center;
+   justify-content: center;
    margin: 20px;
 }
 
@@ -142,7 +144,6 @@ header h1 {
    align-items: center;
    flex-direction: row;
    justify-content: space-between;
-   /* gap: 2em; */
 }
 
 .titulo-modal {
@@ -212,6 +213,14 @@ header h1 {
 .fechar-modal-esquerdo {
    animation: fechar-modal-esquerdo 1s forwards;
    animation-fill-mode: both;
+}
+
+.abrir-modal-direito {
+   animation: abrir-modal-direito 1.5s forwards;
+}
+
+.fechar-modal-direito {
+   animation: fechar-modal-direito 1.5s forwards;
 }
 
 /* estilizações globais */
