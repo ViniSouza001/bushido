@@ -24,9 +24,9 @@
             </p>
             <img src="./assets/image-home.png" alt="Foto de samurai">
          </div>
-         <img onclick="changeNextPage()" class="seta-baixo" src="./assets/seta.png" alt="Seta">
+         <img onclick="changePage()" class="seta-baixo" src="./assets/seta.png" alt="Seta">
       </main> -->
-      <div class="content">
+      <!-- <div class="content">
          <aside class="divs-esquerdas">
             <div onclick="abrirModalEsquerdo(this)" class="topicosEsquerdos">
                <p class="paragrafoFilho">1. Coragem</p>
@@ -113,7 +113,7 @@
 
          <main class="main-content body-container">
             <h1 class="titulo">Os princípios-chaves do Bushido</h1>
-            <img id="bushido-img" src="./assets/img-bushido.png" alt="Image of a samurai">
+            <img class="bushido-img" src="./assets/img-bushido.png" alt="Image of a samurai">
             <h1 class="align-center">Clique nas categorias para ver detalhadamente</h1>
          </main>
          <aside class="divs-direitas">
@@ -175,6 +175,122 @@
                      <p class="paragrafos-cards">
                         O autocontrole, tanto nas emoções quanto nas ações, era
                         fundamental para um samurai. A impulsividade era desencorajada.
+                     </p>
+                  </div>
+                  <div class="fecharModalDireito">
+                     <h3 class="X">X</h3>
+                  </div>
+               </div>
+            </div>
+         </aside>
+      </div> -->
+      <div class="content2">
+         <aside class="divs-esquerdas">
+            <div onclick="abrirModalEsquerdo(this)" class="topicosEsquerdos">
+               <p class="paragrafoFilho">1. Coragem</p>
+               <div class="divs-modal">
+                  <h1 class="titulo-modal">1. Coragem</h1>
+                  <div class="content-modal">
+                     <img src="./assets/image-card1.png" alt="Samurai" class="img-cards">
+                     <p class="paragrafos-cards">
+                        A coragem é fundamental ao enfrentar desafios e obstáculos no trabalho em equipe ou em projetos individuais. Ela envolve a disposição de assumir riscos calculados e enfrentar adversidades.
+                     </p>
+                  </div>
+                  <div class="fecharModalEsquerdo">
+                     <h3 class="X">X</h3>
+                  </div>
+               </div>
+            </div>
+            <div onclick="abrirModalEsquerdo(this)" class="topicosEsquerdos">
+               <p class="paragrafoFilho">3. Lealdade</p>
+               <div class="divs-modal">
+                  <h1 class="titulo-modal">3. Lealdade</h1>
+                  <div class="content-modal">
+                     <img src="./assets/image-card3.png" alt="Samurai" class="img-cards">
+                     <p class="paragrafos-cards">
+                        A lealdade à equipe ou ao objetivo do projeto é fundamental. Isso significa que os membros estão comprometidos em trabalhar juntos para alcançar metas comuns, sem deslealdade ou conflitos internos.
+                     </p>
+                  </div>
+                  <div class="fecharModalEsquerdo">
+                     <h3 class="X">X</h3>
+                  </div>
+               </div>
+            </div>
+            <div onclick="abrirModalEsquerdo(this)" class="topicosEsquerdos">
+               <p class="paragrafoFilho">5. Compaixão</p>
+               <div class="divs-modal">
+                  <h1 class="titulo-modal">5. Compaixão</h1>
+                  <div class="content-modal">
+                     <img src="./assets/image-card5.png" alt="Samurai" class="img-cards">
+                     <p class="paragrafos-cards">
+                        A compaixão no contexto de um projeto ou equipe pode ser demonstrada através da empatia e da disposição de ajudar os colegas quando necessário. Trata-se de ser gentil e solidário.
+                     </p>
+                  </div>
+                  <div class="fecharModalEsquerdo">
+                     <h3 class="X">X</h3>
+                  </div>
+               </div>
+            </div>
+            <div onclick="abrirModalEsquerdo(this)" class="topicosEsquerdos">
+               <p class="paragrafoFilho">7. Justiça</p>
+               <div class="divs-modal">
+                  <h1 class="titulo-modal">7. Justiça</h1>
+                  <div class="content-modal">
+                     <img src="./assets/image-card7.png" alt="Samurai" class="img-cards">
+                     <p class="paragrafos-cards">
+                        Ao trabalhar em equipe ou realizar um projeto, a justiça pode ser aplicada garantindo que as decisões sejam tomadas de maneira justa e imparcial, levando em consideração as necessidades e opiniões de todos os envolvidos.
+                     </p>
+                  </div>
+                  <div class="fecharModalEsquerdo">
+                     <h3 class="X">X</h3>
+                  </div>
+               </div>
+            </div>
+         </aside>
+         <main class="main-content body-container">
+            <img src="./assets/seta.png" alt="Seta para voltar" class="seta-cima" onclick="changePage(-1)">
+            <h1 class="titulo">Princípios éticos do Bushido na atualidade</h1>
+            <img src="./assets/img-bushido2.png" class="bushido-img" alt="Imagem de um samurai">
+         </main>
+         <aside class="divs-direitas">
+            <div onclick="abrirModalDireito(this)" class="topicosDireitos">
+               <p class="paragrafoFilho">2. Honestidade</p>
+               <div class="divs-modal">
+                  <h1 class="titulo-modal">2. Honestidade</h1>
+                  <div class="content-modal">
+                     <img src="./assets/image-card2.png" alt="Samurai" class="img-cards">
+                     <p class="paragrafos-cards">
+                        A honestidade é vital para manter a transparência e a confiança. Os membros da equipe devem ser sinceros e manter a integridade em todas as comunicações e ações.
+                     </p>
+                  </div>
+                  <div class="fecharModalDireito">
+                     <h3 class="X">X</h3>
+                  </div>
+               </div>
+            </div>
+            <div onclick="abrirModalDireito(this)" class="topicosDireitos">
+               <p class="paragrafoFilho">4. Respeito</p>
+               <div class="divs-modal">
+                  <h1 class="titulo-modal">4. Respeito</h1>
+                  <div class="content-modal">
+                     <img src="./assets/image-card4.png" alt="Samurai" class="img-cards">
+                     <p class="paragrafos-cards">
+                        O respeito é crucial em qualquer ambiente de trabalho em equipe. Isso envolve valorizar as opiniões e contribuições de todos os membros, independentemente de sua posição ou status.
+                     </p>
+                  </div>
+                  <div class="fecharModalDireito">
+                     <h3 class="X">X</h3>
+                  </div>
+               </div>
+            </div>
+            <div onclick="abrirModalDireito(this)" class="topicosDireitos">
+               <p class="paragrafoFilho">6. Honor</p>
+               <div class="divs-modal">
+                  <h1 class="titulo-modal">6. Honor</h1>
+                  <div class="content-modal">
+                     <img src="./assets/image-card6.png" alt="Samurai" class="img-cards">
+                     <p class="paragrafos-cards">
+                        A busca pela honra pessoal e profissional pode impulsionar a qualidade do trabalho e a dedicação a um projeto ou equipe. A preservação da reputação é um incentivo para fazer o melhor.
                      </p>
                   </div>
                   <div class="fecharModalDireito">

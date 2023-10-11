@@ -60,7 +60,7 @@ header h1 {
    margin-top: 30px;
 }
 
-.container {
+.container, .content2 {
    display: flex;
    align-items: center;
    justify-content: center;
@@ -76,10 +76,14 @@ header h1 {
    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-.seta-baixo {
+.seta-baixo, .seta-cima {
    width: 100px;
    cursor: pointer;
    align-self: center;
+}
+
+.seta-cima {
+   transform: rotate(180deg);
 }
 
 .content {
@@ -88,7 +92,7 @@ header h1 {
    align-items: center;
 }
 
-#bushido-img {
+.bushido-img {
    width: 50%;
    align-self: center;
 }
@@ -183,6 +187,14 @@ header h1 {
    font-weight: bold;
    color: #393737;
    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.fadeout-divs {
+   animation: fadeout 1s forwards;
+}
+
+.fadein-divs {
+   animation: fadein 1s forwards;
 }
 
 .fadein-paragrafo {

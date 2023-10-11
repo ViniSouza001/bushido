@@ -67,10 +67,13 @@ function abrirModalDireito(element) {
    })
 }
 
-function changeNextPage(value) {
+function changePage(value) {
    nextPage = nextPage + value
    if (nextPage == 1) {
       home.style.animation = 'fadeout-up 1s'
+      home.classList.add('')
       home.style.animationFillMode = 'both'
+   } else if(nextPage == 2) {
+
    }
 }
