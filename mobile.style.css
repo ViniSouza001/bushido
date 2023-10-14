@@ -1,0 +1,88 @@
+@media(max-width: 400px) {
+   header {
+      gap: 2em;
+   }
+
+   header img {
+      width: 75px;
+      height: 75px;
+   }
+
+   header h1 {
+      font-size: 28px;
+   }
+
+   .titulo {
+      font-size: 30px;
+   }
+
+   .container {
+      flex-direction: column;
+   }
+
+   .container p {
+      width: 80vw;
+      text-align: justify;
+      font-size: 20px;
+   }
+
+   .container img {
+      width: 300px;
+   }
+
+   .setas {
+      width: 70px;
+      margin: 10px;
+   }
+
+   .topicosEsquerdos,
+   .topicosDireitos {
+      width: 100px;
+      padding: 5px;
+   }
+
+   .topicosEsquerdos p {
+      padding-left: 30px;
+      font-size: 10px;
+   }
+
+   .topicosDireitos p {
+      margin-right: 0;
+      padding-right: 25px;
+      font-size: 10px;
+   }
+
+   .topicosEsquerdos {
+      margin-left: -5vh;
+   }
+
+   .topicosDireitos {
+      margin-right: -5vh;
+   }
+
+   .body-container {
+      width: 50%;
+   }
+
+   .tituloContent,
+   .body-container .detalhes {
+      font-size: 15px;
+      text-align: center;
+   }
+
+   .bushido-img {
+      width: 100%;
+   }
+
+   .titulo-modal {
+      font-size: 20px;
+   }
+
+   .img-cards {
+      width: 40%;
+   }
+
+   .paragrafos-cards {
+      font-size: 25px;
+   }
+}

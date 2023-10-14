@@ -57,13 +57,17 @@ header h1 {
    height: 80%;
    align-self: center;
    margin: auto;
-   margin-top: 30px;
 }
 
-.container, .content2 {
+.container,
+.content2 {
    display: flex;
    align-items: center;
    justify-content: center;
+}
+
+.content2 {
+   display: none;
 }
 
 .container img {
@@ -76,7 +80,8 @@ header h1 {
    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-.seta-baixo, .seta-cima {
+.seta-baixo,
+.seta-cima {
    width: 100px;
    cursor: pointer;
    align-self: center;
@@ -87,7 +92,7 @@ header h1 {
 }
 
 .content {
-   display: flex;
+   display: none;
    width: 100vw;
    align-items: center;
 }
@@ -159,7 +164,7 @@ header h1 {
    width: 50%;
 }
 
-#img-passaro {
+.img-passaro {
    width: 25%;
 }
 
@@ -219,6 +224,7 @@ header h1 {
 }
 
 .abrir-modal-esquerdo {
+   animation-fill-mode: both;
    animation: abrir-modal-esquerdo 1.5s forwards;
 }
 
@@ -228,11 +234,41 @@ header h1 {
 }
 
 .abrir-modal-direito {
+   animation-fill-mode: both;
    animation: abrir-modal-direito 1.5s forwards;
 }
 
 .fechar-modal-direito {
+   animation-fill-mode: both;
    animation: fechar-modal-direito 1.5s forwards;
+}
+
+.fadeout-up {
+   animation-fill-mode: both;
+   animation: fadeout-up .4s forwards;
+}
+
+.fadein-up {
+   animation-fill-mode: both;
+   animation: fadein-up .4s forwards;
+}
+
+.fadeout-down {
+   animation: fadeout-down .4s forwards;
+   animation-fill-mode: both;
+}
+
+.fadein-down {
+   animation: fadein-down .4s forwards;
+   animation-fill-mode: both;
+}
+
+.disabled {
+   z-index: -1;
+}
+
+.enabled {
+   z-index: 1;
 }
 
 /* estilizações globais */

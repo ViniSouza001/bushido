@@ -1,0 +1,149 @@
+@media (max-width: 400px) {
+
+   /* open */
+
+   @keyframes abrir-modal-esquerdo {
+      0% {
+         margin-left: -5vh;
+         top: 50%;
+         left: 0;
+         position: absolute;
+         transform: translate(0, -50%);
+         width: 100px;
+         border-radius: 1000px;
+         height: auto;
+      }
+
+      40% {
+         top: 50vh;
+         left: 50vw;
+      }
+
+      50% {
+         top: 50vh;
+         left: 50vw;
+         transform: translate(-20%, -50%);
+         position: absolute;
+         width: 50px;
+         height: 50px;
+         border-radius: 100%;
+      }
+
+      100% {
+         top: 50vh;
+         left: 50vw;
+         transform: translate(-40%, -50%);
+         position: absolute;
+         width: 80%;
+         height: 40%;
+         border-radius: 20px;
+         cursor: default;
+      }
+   }
+
+   @keyframes abrir-modal-direito {
+      0% {
+         margin-right: -5vh;
+         top: 50%;
+         right: 0;
+         position: absolute;
+         transform: translate(0, -50%);
+         width: 100px;
+         border-radius: 1000px;
+         height: auto;
+      }
+
+      40% {
+         top: 50vh;
+         right: 55vw;
+      }
+
+      50% {
+         top: 50vh;
+         right: 55vw;
+         transform: translate(40%, -50%);
+         position: absolute;
+         width: 50px;
+         height: 50px;
+         border-radius: 100%;
+      }
+
+      100% {
+         top: 50vh;
+         right: 50vw;
+         transform: translate(40%, -50%);
+         position: absolute;
+         width: 80%;
+         height: 40%;
+         border-radius: 20px;
+         cursor: default;
+      }
+   }
+
+   /* close */
+
+   @keyframes fechar-modal-esquerdo {
+      0% {
+         top: 50vh;
+         left: 50vw;
+         transform: translate(-40%, -50%);
+         position: absolute;
+         width: 80%;
+         height: 40%;
+         border-radius: 20px;
+         cursor: default;
+      }
+
+      50% {
+         top: 50vh;
+         left: 50vw;
+         transform: translate(-20%, -50%);
+         position: absolute;
+         width: 50px;
+         height: 50px;
+         border-radius: 100%;
+      }
+
+      100% {
+         margin-left: -5vh;
+         top: 50%;
+         left: 0;
+         width: 100px;
+         border-radius: 1000px;
+         height: auto;
+      }
+   }
+
+   @keyframes fechar-modal-direito {
+      0% {
+         top: 50vh;
+         right: 50vw;
+         transform: translate(40%, -50%);
+         position: absolute;
+         width: 80%;
+         height: 40%;
+         border-radius: 20px;
+         cursor: default;
+      }
+
+      50% {
+         top: 50vh;
+         right: 50vw;
+         transform: translate(40%, -50%);
+         position: absolute;
+         width: 50px;
+         height: 50px;
+         border-radius: 100%;
+      }
+
+      100% {
+         margin-right: -5vh;
+         transform: none;
+         right: 0;
+         top: 50%;
+         width: 100px;
+         border-radius: 1000px;
+         height: auto;
+      }
+   }
+}

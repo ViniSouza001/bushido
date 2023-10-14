@@ -1,17 +1,5 @@
 /* keyframes */
 
-@keyframes fadeout-up {
-   0% {
-      opacity: 1;
-   }
-
-   100% {
-      margin-top: -30px;
-      opacity: 0;
-      display: none;
-   }
-}
-
 @keyframes abrir-modal-esquerdo {
    0% {
       margin-left: -10vh;
@@ -94,7 +82,7 @@
    0% {
       top: 50vh;
       left: 50vw;
-      transform: translate(0%, -50%);
+      transform: translate(-40%, -50%);
       position: absolute;
       width: 40%;
       height: 60%;
@@ -152,6 +140,53 @@
       width: 200px;
       border-radius: 1000px;
       height: auto;
+   }
+}
+
+@keyframes fadeout-up {
+   0% {
+      opacity: 1;
+      margin-top: 0;
+   }
+
+   100% {
+      margin-top: -30px;
+      opacity: 0;
+   }
+}
+
+@keyframes fadein-up {
+   0% {
+      opacity: 0;
+      margin-top: 30px;
+   }
+
+   100% {
+      opacity: 1;
+      margin-top: 0;
+   }
+}
+
+@keyframes fadeout-down {
+   0% {
+      opacity: 1;
+   }
+
+   100% {
+      margin-top: 30px;
+      opacity: 0;
+   }
+}
+
+@keyframes fadein-down {
+   0% {
+      opacity: 0;
+      margin-top: -30px;
+   }
+
+   100% {
+      margin-top: 0;
+      opacity: 1;
    }
 }
 
